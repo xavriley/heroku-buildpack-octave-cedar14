@@ -44,6 +44,8 @@ echo "-----> exporting path"
 
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 export PATH="$BUILD_DIR/.heroku/octave/bin:$PATH"
+export PATH="$BUILD_DIR/.heroku/gcc/lib64:$PATH"
+export PATH="$BUILD_DIR/.heroku/octave/deps/qrupdate/lib:$PATH"
 export | grep PATH > "$LP_DIR/export"
 
 # cleanup
