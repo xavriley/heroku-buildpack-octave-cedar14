@@ -50,7 +50,7 @@ export | grep PATH > "$LP_DIR/export"
 
 export LD_LIBRARY_PATH="$BUILD_DIR/.heroku/gcc/lib64:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="$BUILD_DIR/.heroku/octave/deps/qrupdate/lib:$LD_LIBRARY_PATH"
-# export | grep LD_LIBRARY_PATH >> "$LP_DIR/export"
+export | grep LD_LIBRARY_PATH >> "$LP_DIR/export"
 
 # cleanup
 rm *.tar.gz
